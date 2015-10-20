@@ -69,7 +69,7 @@ grails.project.dependency.resolution = {
         runtime ":jquery:1.11.1"
 
         // plugin for geoip
-        compile ':geoip:0.3.2'
+        compile ':geoip:0.3.3'
 
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":sass-asset-pipeline:1.9.0"
