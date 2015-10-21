@@ -96,7 +96,7 @@
             </tr>
             <tr>
               <th>Country</th>
-              <td>${location.country}</td>
+              <td>${location.countryName}</td>
             </tr>
             <tr>
               <th>City</th>
