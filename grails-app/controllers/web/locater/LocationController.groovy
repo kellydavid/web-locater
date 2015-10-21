@@ -10,6 +10,7 @@ class LocationController {
 	String fileLocation
 
 	def index() { 
+		/*
 		// need to initialise ipService with lookupService
 		ipService = new GeoIpService(geoLookupService : getLookupService())
 		def ipAddr = ipService.getIpAddress(request)
@@ -19,6 +20,7 @@ class LocationController {
 		}else{
 			render("No location " + "ip address: " + ipAddr)
 		}
+		*/
 	}
 
 	private LookupService getLookupService(){
