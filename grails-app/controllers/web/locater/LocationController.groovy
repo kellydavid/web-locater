@@ -10,17 +10,11 @@ class LocationController {
 	String fileLocation
 
 	def index() { 
-		/*
 		// need to initialise ipService with lookupService
 		ipService = new GeoIpService(geoLookupService : getLookupService())
 		def ipAddr = ipService.getIpAddress(request)
 		def location = ipService.getLocation(ipAddr)
-		if(location != null){
-			render("Your IP address is: " + ipAddr +  " You are located in " + location.city + ", " + location.countryName)
-		}else{
-			render("No location " + "ip address: " + ipAddr)
-		}
-		*/
+		render(view: "index", model: [ipAddr: ipAddr, location: location])
 	}
 
 	private LookupService getLookupService(){

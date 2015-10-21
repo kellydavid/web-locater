@@ -86,31 +86,35 @@
           <div class="page-header">
             <h1>Web Locater</h1>
           </div>
-          <p class="lead">Here is the data gathered about your location based on your ip address.</p>
+          <g:if test="${location != null}" >
+          <p class="lead">Your IP Address is ${ipAddr}. Here is the information about your location:</p>
 
           <table class="table">
             <tr>
               <th>Region</th>
-              <td>location.region</td>
+              <td>${location.region}</td>
             </tr>
             <tr>
               <th>Country</th>
-              <td>location.country</td>
+              <td>${location.country}</td>
             </tr>
             <tr>
               <th>City</th>
-              <td>location.city</td>
+              <td>${location.city}</td>
             </tr>
             <tr>
               <th>Latitude</th>
-              <td>location.latitude</td>
+              <td>${location.latitude}</td>
             </tr>
             <tr>
               <th>Longitude</th>
-              <td>location.longitude</td>
+              <td>${location.longitude}</td>
             </tr>
           </table>
-
+          </g:if>
+          <g:else>
+          <p class="lead">Could not find location information for your IP Address ${ipAddr}.</p>
+          </g:else>
         </div>
 
         <div id="push"></div>
