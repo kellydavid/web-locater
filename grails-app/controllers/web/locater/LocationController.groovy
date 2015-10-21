@@ -15,12 +15,7 @@ class LocationController {
 		def ipAddr = ipService.getIpAddress(request)
 		def location = ipService.getLocation(ipAddr)
 		if(location != null){
-			render("Your IP address is: " + ipAddr + "<br />" +
-				 "Your location information <br /> <hr /> <br />" +
-				 "Country: " + location.country + "<br />" +
-				 "City: " + location.city + "<br />" + 
-				 "Latitude: " + location.latitude + "<br />" +
-				 "Longitude: " + location.longitude + "<br />")
+			render("Your IP address is: " + ipAddr +  " You are located in " + location.city + ", " + location.countryName)
 		}else{
 			render("No location " + "ip address: " + ipAddr)
 		}
