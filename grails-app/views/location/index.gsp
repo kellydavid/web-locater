@@ -110,22 +110,6 @@
               <th>Region</th>
               <td>${location.region}</td>
             </tr>
-            <tr>
-              <th>Postal Code</th>
-              <td>${location.postalCode}</td>
-            </tr>
-            <tr>
-              <th>DMA Code</th>
-              <td>${location.dma_code}</td>
-            </tr>
-            <tr>
-              <th>Area Code</th>
-              <td>${location.area_code}</td>
-            </tr>
-            <tr>
-              <th>Metro Code</th>
-              <td>${location.metro_code}</td>
-            </tr>
           </table>
           </g:if>
           <g:else>
